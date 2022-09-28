@@ -61,3 +61,67 @@ class lab2{
         fourHeads ();
     }
 }
+class lab3{
+    public static void main(String[] args){
+        for(double i=19;i<=33;i+=1.4)
+            System.out.println((int)i+" "+i);
+    }
+}
+class lab4{
+    public static void printTwoDigit(int n){
+        boolean a=false;
+        int num;
+        for(int i=0;i<n;i++){
+            num=(int)(10*Math.random()+10);
+            System.out.println("next= "+num);
+            if(num==13)
+                a=true;
+        }
+        if(a)
+            System.out.println("we saw a 13");
+        else
+            System.out.println("no 13 was seen");
+    }
+    public static void main(String[] args){
+        printTwoDigit(3);
+    }
+}
+class lab5{
+    public static void printLadder (int n){
+        boolean a=false;
+        int num;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(1+"\t");
+            }
+            System.out.print("\n");
+        }
+    }
+    public static void multiplicationTable  (int n){
+        boolean a=false;
+        int num;
+        for(int i=0;i<n;i++){
+            for(int j=1;j<=10;j++){
+                System.out.print((i+1)*j+"\t");
+            }
+            System.out.print("\n");
+        }
+    }
+    public static void main(String[] args){
+        printLadder (5);
+        multiplicationTable(6);
+    }
+}
+class example2{
+    public static void main(String[] args){
+        int i=32512;
+        while(i!= 0){
+            System.out.println(i% 10);
+            i/= 10;
+        }
+        System.out.println();
+        for(int j=32512;j!= 0;j/= 10 ){
+            System.out.println(j%10);
+        }
+    }
+}

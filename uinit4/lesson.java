@@ -127,20 +127,43 @@ class example2{
 }
 class example3{
     public static void main(String[] args){
-//        int i=1;
-//        for(i=1;i<5;i++){
-//
-//        }
-//        System.out.println(i);
-//        for(int j=1;j<5;j++){
-//
-//        }
+        int i=1;
+        for(i=1;i<5;i++){
+
+        }
+        System.out.println(i);
+        for(int j=1;j<5;j++){
+
+        }
         //System.out.println(j);
 
-int x = 0;
-for(int i = 0; true; i++){
-    System.out.println(x);
-
+    }
 }
+
+class example4{
+    public static void main(String[] args){
+        int i=1;
+        if(false && 2/0>0){
+            System.out.println(i);
+        }
+        if(2/0.0>0){
+            System.out.println(i);
+        }
+        System.out.println(2/0.0);
+        System.out.println(2/0);
+    }
+}
+class example5{
+    public static void main(String[] args){
+    int a=-2;
+    int b=Integer.MIN_VALUE+1;
+    if(a>=0&&Integer.MAX_VALUE-a>=b){
+        int result=a+b;
+        System.out.println("1: "+result);
+    }
+    if(a<0&&Integer.MIN_VALUE-a<=b){
+        int result=a+b;
+        System.out.println("2: "+result);
+    }
     }
 }
